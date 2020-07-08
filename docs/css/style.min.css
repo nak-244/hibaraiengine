@@ -707,6 +707,12 @@ p {
 .bg-overlay.op-75 {
   opacity: 0.75
 }
+.bg-overlay.op-50 {
+  opacity: 0.5
+}
+.bg-overlay.op-25 {
+  opacity: 0.25
+}
 
 .font-weight-medium {
   font-weight: 500
