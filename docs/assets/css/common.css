@@ -1,0 +1,18 @@
+.list03 {
+  border: solid 2px #00AEEF;
+  padding: 0.5em;
+  position: relative;
+  margin-top: 2em;
+  background-color: #F9F9F9;
+}
+
+.list03 li {
+  line-height: 1.5;
+  padding: 0.5em 0 0.5em 1.4em;
+  border-bottom: dashed 1px silver;
+  list-style-type: none !important;
+}
+
+.list03 li:last-of-type {
+  border-bottom: none;
+}
