@@ -16,3 +16,10 @@
 .list03 li:last-of-type {
   border-bottom: none;
 }
+
+/* 横幅1200px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
