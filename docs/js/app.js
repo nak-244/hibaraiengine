@@ -1,10 +1,3 @@
-/* Template Name: Deoxa - Responsive Bootstrap 4 Landing Page Template
-   Author: Themesdesign
-   Version: 1.0.0
-   Created: Jan 2020
-   File Description: Main js file
-*/
-
 // STICKY
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
