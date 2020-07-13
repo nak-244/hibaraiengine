@@ -23,3 +23,43 @@
     max-width: 1200px !important;
   }
 }
+
+/*
+ * テーブル調整
+ */
+table {
+  margin: 20px auto;
+}
+
+.tbl-r03 {
+  width: 100%;
+}
+
+.tbl-r03 th {
+  background: #f9f9f9;
+  border: solid 1px #ccc;
+  padding: 10px;
+  width: 25%;
+}
+
+.tbl-r03 td {
+  border: solid 1px #ccc;
+  padding: 10px;
+  width: 75%;
+}
+
+@media screen and (max-width: 919px) {
+  .tbl-r03 {
+    width: 100%;
+  }
+
+  .tbl-r03 th {
+    border-bottom: none;
+  }
+
+  .tbl-r03 th,
+  .tbl-r03 td {
+    display: block;
+    width: 100%;
+  }
+}
