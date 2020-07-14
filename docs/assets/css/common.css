@@ -31,6 +31,10 @@ table {
   margin: 20px auto;
 }
 
+td, th {
+  vertical-align: middle!important;
+}
+
 .tbl-r03 {
   width: 100%;
 }
