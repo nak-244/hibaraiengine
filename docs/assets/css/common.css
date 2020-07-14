@@ -63,3 +63,41 @@ table {
     width: 100%;
   }
 }
+
+/*
+ * FAQ
+ */
+.faq {
+  background: #F6F6F6;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.faq dt {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted;
+  font-weight: bold;
+}
+
+.faq dt:before {
+  content: "Q";
+  font-weight: normal;
+  background: #cc0000;
+  color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  display: inline-block;
+  border-radius: 1em;
+  margin-right: .5em;
+}
+
+.faq dd {
+  margin-bottom: 2em;
+}
+
+.faq dd:last-child {
+  margin-bottom: 0;
+}
