@@ -27,7 +27,7 @@ $conf{'sendmail'} = '/usr/lib/sendmail';
 $conf{'mailto'} = 'tsuyoshi.nakamura@openloop.co.jp';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = 'https://www.olp.co.jp/2020test/';
+$conf{'thanks'} = '../thanks.html';
 
 #08.設置者に届くメールの件名
 $conf{'subject'} = '【HE】ホームページからお問い合わせ';
