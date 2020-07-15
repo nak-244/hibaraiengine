@@ -32,7 +32,7 @@ table {
 }
 
 td, th {
-  vertical-align: middle!important;
+  vertical-align: middle !important;
 }
 
 .tbl-r03 {
@@ -104,4 +104,44 @@ td, th {
 
 .faq dd:last-child {
   margin-bottom: 0;
+}
+
+/*
+ * サイトマップ用
+ */
+.flowchart {
+  margin-left: .5em;
+  border-left: 2px dashed;
+}
+
+.flowchart h4 {
+  position: relative;
+  margin-left: 2em;
+  margin-bottom: 0;
+}
+
+.flowchart p {
+  margin-top: .3em;
+  margin-left: 3em;
+}
+
+.flowchart h4:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: calc(-2em - 6px);
+  top: .5em;
+}
+
+.flowchart h4:after {
+  content: "";
+  border-bottom: 1px solid;
+  width: 1.5em;
+  background: #000;
+  position: absolute;
+  top: .7em;
+  left: -2em;
 }
