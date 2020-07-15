@@ -112,7 +112,7 @@
 			}
 			checkflag[obj.elements[i].name] = 1;
 		}
-		
+
 		if(errorflag == 0){
 			if(confirm("送信してもよろしいですか？")){
 				for(i=0;i<obj.length ;i++){
@@ -212,13 +212,13 @@
 		alert("this");
 	}
 	var mfObj = document.forms["mailform"];
-	
+
 	var elm = document.createElement('input');
 	elm.type = 'hidden';
 	elm.name = 'javascriptcheck';
 	elm.value = 'enabled';
 	mfObj.appendChild(elm);
-	
+
 	var tagObjects = document.getElementsByTagName("tr");
 	for(i=0;i < tagObjects.length;i++) {
 		if(i % 2 == 1 && tagObjects[i].className == "mfptr"){
@@ -226,16 +226,16 @@
 		}
 	}
 	if(mfObj){
-		for(i=0;i<mfObj.length;i++){
-			if(mfObj.elements[i].size){
-				if(mfObj.elements[i].type == "text")
-					mfObj.elements[i].style.width = (mfObj.elements[i].size * 6) + "px";
-			}
-			if(mfObj.elements[i].rows)
-				mfObj.elements[i].style.height = (mfObj.elements[i].rows * 12) + "px";
-			if(mfObj.elements[i].cols)
-				mfObj.elements[i].style.width = (mfObj.elements[i].cols * 6) + "px";
-		}
+		// for(i=0;i<mfObj.length;i++){
+		// 	if(mfObj.elements[i].size){
+		// 		if(mfObj.elements[i].type == "text")
+		// 			mfObj.elements[i].style.width = (mfObj.elements[i].size * 6) + "px";
+		// 	}
+		// 	if(mfObj.elements[i].rows)
+		// 		mfObj.elements[i].style.height = (mfObj.elements[i].rows * 12) + "px";
+		// 	if(mfObj.elements[i].cols)
+		// 		mfObj.elements[i].style.width = (mfObj.elements[i].cols * 6) + "px";
+		// }
 	}
 	var valueList = new Array();
 	var selectedLinks = new Array();
