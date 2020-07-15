@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 
-## SYNCKGRAPHICA Mailform 6.8 / UPDATE::2014-05-02
 
 use Jcode;
 
@@ -9,7 +8,7 @@ use Jcode;
 ########################################################################
 
 #00.テスト時の誤送信を制御 / 0にしないとメールが飛びません
-$conf{'debug'} = 1;
+$conf{'debug'} = 0;
 
 #03.スパムブロック([URL]や[LINK]、<a>タグが含まれた送信をブロック) 1:ON / 0:OFF
 $conf{'spam_block'} = 1;
@@ -21,24 +20,30 @@ $conf{'spam_url_block'} = 1;
 $conf{'spam_message'} = 'スパム行為の可能性があるため、送信できません。<br />送信内容にURLを含める事はできません。';
 
 #04.sendmailのパス(サーバ会社へお問い合わせ下さい)
-$conf{'sendmail'} = '/usr/sbin/sendmail';
+# $conf{'sendmail'} = '/usr/sbin/sendmail';
+$conf{'sendmail'} = '/usr/lib/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
-$conf{'mailto'} = '******';
+$conf{'mailto'} = 'tsuyoshi.nakamura@openloop.co.jp';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = 'http://cgi.synck.com/mailform/thanks.html';
+$conf{'thanks'} = 'https://www.olp.co.jp/2020test/';
 
 #08.設置者に届くメールの件名
-$conf{'subject'} = 'メールフォームから';
+$conf{'subject'} = '【HE】ホームページからお問い合わせ';
 
 #09.送信者に届くメールの件名
-$conf{'res_subject'} = 'お問い合わせありがとうございます';
+$conf{'res_subject'} = 'ヒバライエンジン - お問い合わせ受け付けました。';
 
 #10.送信者に届くメールの本文
 $conf{'res_body'} = <<'__res_body_eof__';
-この度はお問い合せ頂き誠にありがとうございました。
-改めて担当者よりご連絡をさせていただきます。
+この度は　hibarai Engine（ヒバライエンジン）　に関するお問い合わせをいただき、誠にありがとうございます。
+内容を確認させていただき、改めて担当者よりご連絡をさせていただきます。
+
+尚、3営業日経過しても返信がなかった場合、お手数おかけいたしますが改めてお問い合わせフォームを送信いただきますよう、お願い申し上げます。
+
+■hibarai Engine お問い合わせフォーム
+https://www.olp.co.jp/hibaraiengine/counseling.html
 
 ─ご送信内容の確認─────────────────
 <resbody>
@@ -49,11 +54,11 @@ $conf{'res_body'} = <<'__res_body_eof__';
 
 この度はお問い合わせ重ねてお礼申し上げます。
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-　※この署名はサンプルです。必ず変更してください※　
-　シンクグラフィカ / SYNCKGRAPHICA
-　〒003-0801 札幌市白石区菊水一条四丁目一番三十九号
-　TEL / 011-832-8698　FAX / 011-832-8698
-　http://www.synck.com
+　株式会社オープンループパートナーズ／　hibarai Engine　
+　〒160-0022
+　東京都新宿区新宿四丁目3番17号 FORECAST新宿SOUTH7階
+　TEL / 03-5368-3789
+　https://www.olp.co.jp/hibaraiengine/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 __res_body_eof__
 
