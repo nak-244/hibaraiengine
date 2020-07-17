@@ -89,7 +89,7 @@ $conf{'javascript'} = 0;
 $conf{'serial_file'} = 'count.dat';
 
 #12.件名に通し番号を付ける 1:ON / 0:OFF
-$conf{'subject_serial'} = 1;
+$conf{'subject_serial'} = 0;
 
 #12.送信履歴保存用ファイルとダウンロードパスワード
 #$conf{'log_file'} = 'sendlog.cgi';
