@@ -92,8 +92,8 @@ $conf{'serial_file'} = 'count.dat';
 $conf{'subject_serial'} = 1;
 
 #12.送信履歴保存用ファイルとダウンロードパスワード
-$conf{'log_file'} = 'sendlog.cgi';
-$conf{'log_passwd'} = '3789';
+#$conf{'log_file'} = 'sendlog.cgi';
+#$conf{'log_passwd'} = '3789';
 
 #13.送信文字コード
 $conf{'charset'} = 'ISO-2022-JP';
