@@ -10,3 +10,17 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ErrorDocument 404 https://www.olp.co.jp/hibaraiengine/404.html
+
+RewriteEngine on
+RewriteRule ^case.html$ https://www.olp.co.jp/hibaraiengine/index.html?case [R=301,L]
+RewriteRule ^funcimg01.html$ https://www.olp.co.jp/hibaraiengine/index.html?funcimg01 [R=301,L]
+RewriteRule ^funcimg02.html$ https://www.olp.co.jp/hibaraiengine/index.html?funcimg02 [R=301,L]
+RewriteRule ^funcimg03.html$ https://www.olp.co.jp/hibaraiengine/index.html?funcimg03 [R=301,L]
+RewriteRule ^funcimg04.html$ https://www.olp.co.jp/hibaraiengine/index.html?funcimg04 [R=301,L]
+RewriteRule ^funcimg05.html$ https://www.olp.co.jp/hibaraiengine/index.html?funcimg05 [R=301,L]
+RewriteRule ^funcimg06.html$ https://www.olp.co.jp/hibaraiengine/index.html?funcimg06 [R=301,L]
+RewriteRule ^obc.html$ https://www.olp.co.jp/hibaraiengine/index.html?obc [R=301,L]
+RewriteRule ^pca.html$ https://www.olp.co.jp/hibaraiengine/index.html?pca [R=301,L]
+RewriteRule ^privacy.html$ https://www.olp.co.jp/hibaraiengine/index.html?privacy [R=301,L]
+RewriteRule ^tatekae01.html$ https://www.olp.co.jp/hibaraiengine/index.html?tatekae01 [R=301,L]
+RewriteRule ^tatekae02.html$ https://www.olp.co.jp/hibaraiengine/index.html?tatekae02 [R=301,L]
