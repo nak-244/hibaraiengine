@@ -1,0 +1,4 @@
+御社名	部署名	役職名	お名前	郵便番号	ご住所	電話番号	メールアドレス	業種	ホームページアドレス	ご相談内容	情報メールの配信	活用アルバイト数	アルバイト活用部門	このサイトをどのように知ったか	
+test			2321	-			watanabe@omakaseweb.jp	jkljljlkj		aaaaaa	希望しない				
+test			2321	-			watanabe@omakaseweb.jp	jkljljlkj		aaaaaa	希望しない				
+株式会社オープンループ	マーケティング推進室		坂井 隆行	160-0022	東京都新宿区新宿3-1-24京王新宿3丁目ビル5F	03-5368-3789	sakai@openloop.co.jp	総合人材アウトソーシング業	http://www.openloop.co.jp	テストです。	希望する	1000名以上	10部門以上	GMOの紹介	

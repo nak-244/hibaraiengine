@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "アクセス統計"
+AuthUserFile /home/www/dbvyu000/public_html/analog/.htpasswd.14474
+AuthGroupFile /dev/null
+require valid-user
+
