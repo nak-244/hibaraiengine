@@ -24,3 +24,11 @@ RewriteRule ^pca.html$ https://www.olp.co.jp/hibaraiengine/index.html?pca [R=301
 RewriteRule ^privacy.html$ https://www.olp.co.jp/hibaraiengine/index.html?privacy [R=301,L]
 RewriteRule ^tatekae01.html$ https://www.olp.co.jp/hibaraiengine/index.html?tatekae01 [R=301,L]
 RewriteRule ^tatekae02.html$ https://www.olp.co.jp/hibaraiengine/index.html?tatekae02 [R=301,L]
+
+#リニューアル前の一時的要素
+RewriteRule ^merit.html$ https://www.olp.co.jp/hibaraiengine/ [L,R=301]
+RewriteRule ^function.html$ https://www.olp.co.jp/hibaraiengine/ [L,R=301]
+RewriteRule ^flow.html$ https://www.olp.co.jp/hibaraiengine/ [L,R=301]
+RewriteRule ^faq.html$ https://www.olp.co.jp/hibaraiengine/ [L,R=301]
+RewriteRule ^request.html$ https://www.olp.co.jp/hibaraiengine/ [L,R=301]
+RewriteRule ^sitemap.html$ https://www.olp.co.jp/hibaraiengine/ [L,R=301]

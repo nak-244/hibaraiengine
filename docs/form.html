@@ -16,6 +16,7 @@
   <link href="https://www.olp.co.jp/hibaraiengine/css/style.min.css" rel="stylesheet" type="text/css" />
   <link href="https://www.olp.co.jp/hibaraiengine/assets/css/common.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 
   <!--Navbar Start-->
@@ -68,62 +69,75 @@
           </div>
         </div>
       </div>
-      <form action="https://xs697081.xsrv.jp/he-form/olpmail.php" method="post" enctype="multipart/form-data" id="he-form">
+      <form action="php/mailform.php" method="post" id="mail_form">
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-8">
-            <table class="table table-bordered tbl-r03">
-              <tbody>
-                <tr>
-                  <th><span class="small badge badge-danger">必須</span>&nbsp;会社名</th>
-                  <td>
-                    <input type="text" name="company_req" class="form-control">
-                  </td>
-                </tr>
-                <tr>
-                  <th><span class="small badge badge-danger">必須</span>&nbsp;ご担当者名</th>
-                  <td>
-                    <input type="text" name="name_req" class="form-control">
-                  </td>
-                </tr>
-                <tr>
-                  <th><span class="small badge badge-danger">必須</span>&nbsp;電話番号</th>
-                  <td>
-                    <input type="tel" name="tel_req" class="form-control">
-                  </td>
-                </tr>
-                <tr>
-                  <th><span class="small badge badge-danger">必須</span>&nbsp;メールアドレス</th>
-                  <td>
-                    <input type="email" name="email_req" class="form-control">
-                  </td>
-                </tr>
-                <tr>
-                  <th><span class="small badge badge-danger">必須</span>&nbsp;お問い合わせ種類</th>
-                  <td>
-                    <select class="custom-select" name="type_req">
-                      <option value="">▼下記から選択してください▼</option>
-                      <option value="その他">その他</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <th><span class="small badge badge-primary">任意</span>&nbsp;お問い合わせ内容</th>
-                  <td>
-                    <textarea name="contents" class="form-control" rows="3"></textarea>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col-lg-12 col-md-12">
+
+            <div class="row pt-3 pb-3 waku">
+              <div class="form-group col-lg-6">
+                <dl>
+                  <dt class="form-label mb-1 text-2"><span class="small badge badge-danger mr-2">必須</span>会社名</dt>
+                  <dd class="required"><input type="text" name="name_1" class="form-control h-auto py-2"></dd>
+                </dl>
+              </div>
+              <div class="form-group col-lg-6">
+                <dl>
+                  <dt class="form-label mb-1 text-2"><span class="small badge badge-danger mr-2">必須</span>ご担当者名</dt>
+                  <dd class="required"><input type="text" name="name_kana" class="form-control h-auto py-2"></dd>
+                </dl>
+              </div>
+              <div class="form-group col-lg-6">
+                <dl>
+                  <dt class="form-label mb-1 text-2"><span class="small badge badge-danger mr-2">必須</span>電話番号</dt>
+                  <dd class="required"><input type="text" name="tel_req" class="form-control h-auto py-2"></dd>
+                </dl>
+              </div>
+              <div class="form-group col-lg-6">
+                <dl>
+                  <dt class="form-label mb-1 text-2"><span class="small badge badge-danger mr-2">必須</span>メールアドレス</dt>
+                  <dd class="required"><input type="text" name="mail_address" class="form-control h-auto py-2"></dd>
+                </dl>
+              </div>
+              <div class="form-group col">
+                <dl>
+                  <dt class="form-label mb-1 text-2"><span class="small badge badge-danger mr-2">必須</span>お問い合わせ内容</dt>
+                  <dd class="required"><textarea maxlength="5000" rows="8" class="form-control h-auto py-2" name="contents_req"></textarea></dd>
+                </dl>
+              </div>
+            </div>
+            <style>
+              .waku {
+                background-color: #FFFFFF;
+                border: 1px solid #bbbbbb;
+              }
+
+              .form-control {
+                font-size: 16px;
+                background-color: rgba(52, 58, 64, 0.05);
+              }
+            </style>
+
           </div>
         </div>
-        <div class="row text-center mt-5">
-          <div class="col-lg-12 col-md-12">
-            <input type="submit" value="フォームを送信する" class="btn btn-warning" />
+        <div class="row">
+          <div class="form-group col">
+            <p id="form_submit" class="text-center mt-5"><input type="button" id="form_submit_button" value="送信する" class="btn btn-warning" /></p>
           </div>
         </div>
       </form>
     </div>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/mailform-js.php"></script>
+  <style>
+    form#mail_form dl dd span.error_blank,
+    form#mail_form dl dd span.error_format,
+    form#mail_form dl dd span.error_match {
+      display: block;
+      color: #ff0000;
+      margin-top: 5px;
+    }
+  </style>
   <!-- コンテンツ End -->
 
   <!-- footer Start -->
